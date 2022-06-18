@@ -6,7 +6,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 USER root
 #Install Cron
 RUN apt-get update
-RUN apt-get -y install bash curl git
+RUN apt-get -y install bash curl git libncurses5
 
 COPY . .
 
