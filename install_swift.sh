@@ -1,6 +1,6 @@
 #!/bin/bash
 if [[ ! -d /opt/swift ]]; then
-  mkdir /opt/swift
+  mkdir -p /opt/swift
   mkdir /opt/swift/include
   mkdir /opt/swift/internal-modules
   mkdir /opt/swift/lib
