@@ -1,4 +1,5 @@
-FROM jupyter/base-notebook
+# FROM jupyter/base-notebook
+FROM jupyter/datascience-notebook
 
 # Fix DL4006
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
