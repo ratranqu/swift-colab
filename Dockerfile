@@ -11,6 +11,8 @@ RUN apt-get -y install bash curl git libncurses5 libc6-dev libc++-dev \
                libc++abi-dev libstdc++-9-dev binutils python-dev \
                pip
 
+USER jovyan
+
 RUN pip install jupyter-client
 
 COPY . .
