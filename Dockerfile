@@ -10,9 +10,11 @@ RUN apt-get update
 RUN apt-get -y install bash curl git libncurses5 libc6-dev libc++-dev \
                libc++abi-dev libstdc++-9-dev binutils python-dev
 
-USER jovyan
+USER ${NB_UID}
 
 COPY . .
 
 RUN chmod +rwx install_swift.sh
 RUN ./install_swift.sh "5.6.2"
+
+RUN fix-permissions "/home/${NB_USER}"
