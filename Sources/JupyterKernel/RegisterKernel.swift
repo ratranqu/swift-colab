@@ -41,7 +41,7 @@ public func JupyterKernel_registerSwiftKernel() {
   
   fm.createFile(atPath: kernelSpecPath, contents: kernelSpec.data(using: .utf8)!)
   print("Before installing kernel spec")
-  KernelSpecManager().install_kernel_spec(jupyterKernelFolder, "swift")
+  //KernelSpecManager().install_kernel_spec(jupyterKernelFolder, "swift")
   print("After installing kernel spec")
 
   // Overwrite Python kernel script.
