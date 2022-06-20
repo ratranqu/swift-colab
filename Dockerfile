@@ -8,11 +8,7 @@ USER root
 #Install Cron
 RUN apt-get update
 RUN apt-get -y install bash curl git libncurses5 libc6-dev libc++-dev \
-               libc++abi-dev libstdc++-9-dev binutils python-dev \
-               pip
-
-RUN pip install pyzmq
-
+               libc++abi-dev libstdc++-9-dev binutils python-dev 
 
 ENV PYTHONPATH=/opt/conda/lib/python3.10/site-packages
 
