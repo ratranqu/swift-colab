@@ -13,6 +13,7 @@ RUN apt-get -y install bash curl git libncurses5 libc6-dev libc++-dev \
 
 RUN pip install jupyter-client
 
+ENV PYTHONPATH=/opt/conda/lib/python3.10/site-packages
 
 COPY . .
 RUN chmod +rwx install_swift.sh
