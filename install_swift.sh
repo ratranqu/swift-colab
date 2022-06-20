@@ -256,6 +256,11 @@ else
   echo "Using cached JupyterKernel library"
 fi
 
+
+# locate jupyter_client
+ls -la /opt/conda/lib/python3.10/site-packages
+
+
 # Overwrite Python kernel
 
 if [[ $mode == "dev" || ! -e "progress/registered-jupyter-kernel" ]]; then
