@@ -173,8 +173,9 @@ if [[ $mode == "dev" || ! -e "progress/downloaded-swift-colab" ]]; then
     rm -r "swift-colab"
   fi
   
+  # TODO: revert before merge
   git clone --depth 1 --branch main \
-    "https://github.com/philipturner/swift-colab"
+    "https://github.com/ratranqu/swift-colab"
   
   swift_colab_include="/opt/swift/swift-colab/Sources/include"
   for file in $(ls $swift_colab_include)
