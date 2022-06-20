@@ -106,7 +106,7 @@ extension PythonLibrary {
     #elseif os(Linux)
     private static var libraryNames = ["libpython:", "libpython:m"]
     private static var libraryPathExtensions = [".so"]
-    private static var librarySearchPaths = ["", "/opt/conda/lib/python3.10/site-packages"]
+    private static var librarySearchPaths = [""]
     private static var libraryVersionSeparator = "."
     #elseif os(Windows)
     private static var libraryNames = ["python:"]

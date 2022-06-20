@@ -44,6 +44,9 @@ let Py_Initialize: @convention(c) () -> Void =
 let Py_IncRef: @convention(c) (PyObjectPointer?) -> Void =
     PythonLibrary.loadSymbol(name: "Py_IncRef")
 
+let Py_SetPath: @convention(c) (PyObjectPointer?) -> Void =
+    PythonLibrary.loadSymbol(name: "Py_SetPath")
+
 let Py_DecRef: @convention(c) (PyObjectPointer?) -> Void =
     PythonLibrary.loadSymbol(name: "Py_DecRef")
 
