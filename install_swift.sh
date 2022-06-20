@@ -174,7 +174,7 @@ if [[ $mode == "dev" || ! -e "progress/downloaded-swift-colab" ]]; then
   fi
   
   # TODO: revert before merge
-  git clone --depth 1 --branch main \
+  git clone --depth 1 --branch docker \
     "https://github.com/ratranqu/swift-colab"
   
   swift_colab_include="/opt/swift/swift-colab/Sources/include"
